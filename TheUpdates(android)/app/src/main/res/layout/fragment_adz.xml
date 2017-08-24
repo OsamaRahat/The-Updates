@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+
+    >
+
+
+
+   <ImageView
+       android:src="@drawable/logo"
+       android:scaleType="center"
+       android:id="@+id/imgAd"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" />
+
+    <com.android.theupdates.ui.views.CustomButton
+        android:id="@+id/imgClose"
+        android:padding="10dp"
+        android:background="@drawable/close"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>

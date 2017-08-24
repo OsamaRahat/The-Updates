@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">The Updates</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="msg_connection_failed">Error! Connection to server failed.</string>
+    <string name="msg_connection_error">No internet connection</string>
+
+    <!-- AnyTextView -->
+    <string name="typeface_not_found">Typeface %$1 not found, or could not be loaded.
+        Showing default typeface.</string>
+    <string name="app">AnyTextView</string>
+    <string name="assets_fonts_folder">fonts/</string>
+    <string name="txt_enter_phone_no">Enter Phone No.</string>
+
+    <!-- Date Time -->
+    <string name="common.months">months</string>
+    <string name="common.weeks">weeks</string>
+    <string name="common.days">days</string>
+    <string name="common.hrs">hrs</string>
+    <string name="common.mins">mins</string>
+    <string name="common.secs">secs</string>
+    <string name="common.ago">ago</string>
+
+    <string-array name="arrSideMenu">
+        <item>Activity Feed</item>
+        <item>Halaat Updates</item>
+        <item>Job Updates</item>
+        <item>Food Updates</item>
+        <item>Question Updates</item>
+        <item>Scam Updates</item>
+        <item>Weather Updates</item>
+        <item>Education Updates</item>
+        <item>Event Updates</item>
+        <item>Humanity Updates</item>
+        <item>Shop Updates</item>
+
+    </string-array>
+
+    <string-array name="arrStatusUpdate">
+        <item>Activity Feed</item>
+        <item>What’s your halaat update?</item>
+        <item>What’s your job update?</item>
+        <item>What’s cooking?</item>
+        <item>What’s your question?</item>
+        <item>Who scammed you?</item>
+        <item>Is it cloudy, sunny, rainy or snowy?</item>
+        <item>Talk books and schools?</item>
+        <item>What’s the event update?</item>
+        <item>Sharing is caring?</item>
+        <item>Want to buy or sell?</item>
+
+    </string-array>
+
+    <string-array name="arrSetting">
+        <item>Privacy Policy</item>
+        <item>Group Rules</item>
+        <item>Share</item>
+        <item>Feedback</item>
+        <item>Rate</item>
+        <item>About</item>
+
+    </string-array>
+
+    <string name="validation_email_invalid">email is invalid</string>
+    <string name="name_validation">It is too short (minimum is 2 characters)</string>
+
+    <string name="facebook_app_id">791083504322419</string><!--598017527051056//1203216899734450-->
+    <string name="fb_login_protocol_scheme">@string/facebook_app_id</string>
+</resources>

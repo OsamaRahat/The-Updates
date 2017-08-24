@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:background="@drawable/grey_roundercorners"--><!--xmlns:tools="http://schemas.android.com/tools"-->
+
+<!--&gt;-->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linAnnouncement"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:layout_marginLeft="1dp"
+    android:layout_marginRight="1dp"
+    android:background="@drawable/grey_roundercorners"
+    android:orientation="vertical"
+android:layout_marginTop="15dp"
+    android:padding="0dp"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/txtAnnouncement"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="#135326"
+        android:drawableLeft="@drawable/refresh"
+        android:drawablePadding="10dp"
+        android:gravity="left"
+        android:maxLines="3"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        tools:text="Kindly follow app guidelines and policies before posting anything.." />
+
+    <TextView
+        android:id="@+id/txtClose"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="X Dismiss"
+        android:textColor="@color/colorListHeader" />
+
+
+</LinearLayout>
+
+    <!--</RelativeLayout>-->

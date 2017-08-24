@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Report"
+            android:textColor="@color/green_app"
+            android:textSize="26sp"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorGrey" />
+
+        <RadioGroup
+            android:id="@+id/rdGrpReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <RadioButton
+                android:id="@+id/rdBtnUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Report User"
+                android:textColor="#5A5A5A"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <!--android:layout_marginTop="15dp"-->
+            <RadioButton
+                android:id="@+id/rdBtnPost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Report Post"
+                android:textColor="#5A5A5A"
+                android:textSize="18sp" />
+
+        </RadioGroup>
+
+        <EditText
+
+            android:id="@+id/edtReportComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/transparent"
+            android:hint="Enter reason for report."
+            android:inputType="textMultiLine"
+            android:maxLines="4"
+            android:minLines="2"
+            android:scrollbars="vertical"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:gravity="top|left"
+            tools:text="sdafasd\nsdfsd\nsdfsdf\ndfsdf\nsdfasd" />
+
+        <TextView
+            android:id="@+id/btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green_app"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="YES"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#5A5A5A"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</LinearLayout>

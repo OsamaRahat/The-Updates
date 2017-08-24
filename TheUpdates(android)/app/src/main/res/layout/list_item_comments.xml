@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+
+
+    <ImageView
+        android:id="@+id/imgUser"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="8dp"
+        tools:background="@drawable/img_frame" />
+
+    <TextView
+        android:id="@+id/txtCommentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/colorListHeader"
+        tools:text="25 min"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="14dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:id="@+id/txtCommenter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        tools:text="Mary Right"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_toLeftOf="@+id/txtCommentTime"
+        android:layout_toRightOf="@+id/imgUser"
+         />
+
+    <TextView
+        android:id="@+id/txtUserComments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtCommenter"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/imgUser"
+        android:layout_toRightOf="@+id/imgUser"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:minLines="0"
+        tools:text="Very Beautiful!!!"
+        android:textColor="@color/colorListHeader"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/txtCountLikes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtUserComments"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/imgUser"
+        android:layout_toRightOf="@+id/imgUser"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        tools:text="LIKE (5)"
+        android:textColor="@color/colorListHeader"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>

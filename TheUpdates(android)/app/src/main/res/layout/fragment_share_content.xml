@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relShareContainer">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:id="@+id/linAttachment"
+            android:layout_width="match_parent"
+            android:gravity="right"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txtShareHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text=""
+                android:background="@color/transparent"
+                android:textColor="@color/colorListHeader"
+                android:textSize="16sp" >
+                <requestFocus/>
+                </EditText>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relShareContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/imgGallery"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="#0000"
+            android:scaleType="fitXY"
+            android:src="@drawable/photo" />
+
+        <ImageButton
+            android:id="@+id/imgVideo"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imgGallery"
+            android:background="#0000"
+            android:scaleType="fitXY"
+            android:src="@drawable/video" />
+
+        <ImageButton
+            android:id="@+id/imgWebLink"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imgVideo"
+            android:background="#0000"
+            android:src="@drawable/weblink" />
+
+        <TextView
+            android:id="@+id/txtPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:background="@color/green_app"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="Post"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viwHorizontalBar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/relShareContainer"
+        android:background="#9F9F9F" />
+
+</RelativeLayout>

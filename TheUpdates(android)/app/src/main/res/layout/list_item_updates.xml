@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/grey_roundercorners"
+
+    >
+
+
+    <View
+        android:id="@+id/viwUpdateBar"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/colorAccent" />
+
+
+    <ImageView
+        android:id="@+id/imgUser"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="14dp"
+        tools:background="@drawable/img_frame" />
+
+    <TextView
+        android:id="@+id/txtReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="14dp"
+        android:textColor="@color/colorListHeader"
+        android:textSize="12sp"
+        android:background="@drawable/reportbox"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:text="Report" />
+
+
+    <TextView
+        android:id="@+id/txtUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgUser"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/imgUser"
+        android:textColor="@color/colorListHeader"
+        android:textSize="14sp"
+        tools:text="Mr Khan"
+        android:layout_toLeftOf="@+id/txtReport"
+         />
+
+    <TextView
+        android:id="@+id/txtUpdateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtUserName"
+        android:layout_toEndOf="@+id/imgUser"
+        android:layout_toRightOf="@+id/imgUser"
+        android:drawableLeft="@drawable/time_icon"
+        android:drawablePadding="4dp"
+        android:textColor="@color/colorListHeader"
+        android:textSize="11sp"
+        tools:text="7 hrs ago" />
+
+
+    <TextView
+        android:id="@+id/txtLinkUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtUpdateTime"
+        android:layout_toEndOf="@+id/imgUser"
+        android:layout_toRightOf="@+id/imgUser"
+        android:textColor="@color/colorListHeader"
+        android:textSize="11sp"
+        tools:text="via Job Update" />
+
+
+    <View
+        android:id="@+id/viwHorizontalBar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/imgUser"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:background="#9F9F9F" />
+
+    <TextView
+        android:id="@+id/txtDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/viwHorizontalBar"
+        android:layout_alignLeft="@+id/viwHorizontalBar"
+        android:layout_alignRight="@+id/viwHorizontalBar"
+        android:layout_alignStart="@+id/viwHorizontalBar"
+        android:layout_below="@+id/viwHorizontalBar"
+        android:layout_marginTop="14dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/colorListDesc"
+        tools:text="Required Customer Support Representative for multinational bank!!" />
+
+    <LinearLayout
+        android:id="@+id/linPicsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtDesc"
+        android:layout_alignLeft="@+id/txtDesc"
+        android:layout_alignRight="@+id/txtDesc"
+        android:layout_alignStart="@+id/txtDesc"
+        android:layout_below="@+id/txtDesc"
+        android:layout_marginTop="14dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+
+        android:weightSum="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgArchieve"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/car1" />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/watermark_post" />
+
+        </FrameLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/linPostImages"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:weightSum="4">
+
+            <ImageView
+
+                android:id="@+id/imgUpdate1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/car1" />
+
+            <ImageView
+                android:id="@+id/imgUpdate2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/car2" />
+
+            <ImageView
+                android:id="@+id/imgUpdate3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/car3" />
+
+            <TextView
+                android:id="@+id/txtUpdateMore"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="45sp"
+                android:typeface="serif"
+                tools:background="@color/green_app" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txtCommnetCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtDesc"
+        android:layout_alignStart="@+id/txtDesc"
+        android:layout_below="@+id/linPicsContainer"
+        android:layout_marginTop="14dp"
+        android:ellipsize="end"
+        android:ems="6"
+        android:maxLines="1"
+        android:textColor="@color/colorListHeader"
+        android:textSize="12sp"
+        tools:text="50 Comments" />
+
+    <View
+        android:id="@+id/viwSeparator"
+        android:layout_width="1dp"
+        android:layout_height="10dp"
+        android:layout_alignTop="@+id/txtCommnetCount"
+        android:layout_below="@+id/linPicsContainer"
+        android:layout_toRightOf="@+id/txtCommnetCount"
+        android:background="#9F9F9F" />
+
+    <TextView
+        android:id="@+id/txtLikesCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linPicsContainer"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@+id/viwSeparator"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/colorListHeader"
+        android:textSize="12sp"
+        tools:text="50 Likes" />
+
+
+    <LinearLayout
+        android:id="@+id/linLikeCommentConatiner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCommnetCount"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="14dp"
+        android:background="#E0E0E0"
+        android:padding="10dp"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/txtLikes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            android:drawableLeft="@drawable/like"
+            android:drawablePadding="-50dp"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:text="Like"
+            android:textColor="#504C4D"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="#9F9F9F" />
+
+        <TextView
+            android:id="@+id/txtComment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            android:drawableLeft="@drawable/comment"
+            android:drawablePadding="-5dp"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:text="Comment"
+            android:textColor="#504C4D"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/relCommentHolder"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:id="@+id/viwHorizontalBar"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:background="#9F9F9F" />
+
+        <EditText
+            android:background="@color/transparent"
+            android:maxLines="2"
+            android:id="@+id/txtPostComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/txtPost"
+            android:layout_toStartOf="@+id/txtPost"
+            android:hint="Add Comment"
+            android:padding="10dp"
+            tools:text="sadfsd\nasdfasd\nasdfasdf\nasdfasd\nasdfasdf\nasdfasdfasdfa"
+            android:scrollbars="vertical"
+            android:inputType="textMultiLine"
+            android:textColor="@color/colorListHeader"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/green_app"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="Post"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_above="@+id/relCommentHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:layout_marginBottom="5dp"
+            android:id="@+id/lstViwComments"
+            style="@style/CustomListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/colorGrey"
+            android:dividerHeight="1dp"
+            android:stackFromBottom="true"
+            />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+</RelativeLayout>
+

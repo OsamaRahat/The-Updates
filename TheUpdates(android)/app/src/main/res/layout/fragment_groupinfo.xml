@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    >
+
+
+    <include
+        android:id="@+id/viewAnnouncement"
+        layout="@layout/list_item_announcement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/relShareContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/imgGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/imgVideo"
+            android:background="#0000"
+            android:src="@drawable/photo" />
+
+        <ImageButton
+            android:id="@+id/imgVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/imgWebLink"
+            android:background="#0000"
+            android:src="@drawable/video" />
+
+        <ImageButton
+            android:id="@+id/imgWebLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="#0000"
+            android:src="@drawable/weblink" />
+
+        <TextView
+            android:id="@+id/txtShareUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="Halat Updates"
+            android:textColor="@color/colorListHeader" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viwHorizontalBar"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_above="@id/relShareContainer"
+        android:background="@color/green_app"
+        android:visibility="visible" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/viwHorizontalBar"
+        android:layout_below="@+id/viewAnnouncement"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp">
+
+        <ListView
+            android:id="@+id/lstViwUpdateMsg"
+            style="@style/CustomListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/transparent"
+            android:dividerHeight="10dp" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>
+

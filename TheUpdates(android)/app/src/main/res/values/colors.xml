@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="green_app">#145627</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="colorListHeader">#484848</color>
+    <color name="colorListDesc">#303030</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorHoverSidebar">#042C11</color>
+    <color name="colorSideBarSeparator">#197B35</color>
+    <color name="colorGrey">#D6D6D6</color>
+
+    <!-- SideBar Group Colors.. -->
+    <color name="green">#145627</color>
+    <color name="red">#FB0007</color>
+    <color name="sky">#15AAFF</color>
+    <color name="blue">#0000A0</color>
+    <color name="yellow">#B5BB08</color>
+    <color name="purple">#D63AFB</color>
+    <color name="pink">#F794F2</color>
+    <color name="orange">#FD7C09</color>
+    <color name="maroon">#D0D0D0</color>
+    <color name="brown">#AD6609</color>
+    <color name="weather_tab_bg">#505050</color>
+
+
+</resources>
